@@ -1,0 +1,249 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-regular-blanco {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .roboto-medium-blanco {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:white
+  }
+  .parrafo-info {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    width: 95%;
+    height: 90px;
+    background-color: rgba(29, 112, 202, 0.57);
+    margin-top: -5px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 2.5%;
+}
+
+@media (max-width: 768px) {
+  .parrafo-info {
+    font-size: 25px;
+    height: 150px;
+
+  }
+}
+
+.navegador {
+  color: white;  
+  text-decoration: none;
+  font-size: 20px; 
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+
+.caja-logo{
+  display: flex;
+  justify-content: center
+}
+
+.navegador{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #DF8787;
+  padding: 5px;
+}
+
+.boton-imagen {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s;
+}
+
+.boton-imagen:hover {
+  transform: scale(1.1);
+}
+
+#info-tratamientos{
+display: flex; 
+align-items: center;
+flex-direction: column;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap:wrap;
+}
+
+@media (max-width: 768px) {
+  .form {
+    max-width: 400px;
+  }
+}
+
+.label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.input,
+.textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input {
+  height: 40px;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container-cards {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e07a7a;
+  border-radius: 8px;
+  width: 200px;
+  height: 466px; 
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #333;
+  margin: 10px 0;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.card p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+  flex-grow: 1; 
+}
+
+
+.button {
+  background-color: #e07a7a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.button:hover {
+  background-color: #d56b6b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titulo-promodepilacion{
+  color: #e07a7a;
+  text-align: center;
+  font-size: 30px;
+}
+
+.contacto {
+  color: #1D70CA;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.icono-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #DF8787;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.icono-footer{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .icono-footer {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .icono-footer p {
+    margin: 5px 0;
+  }
+  
+}
