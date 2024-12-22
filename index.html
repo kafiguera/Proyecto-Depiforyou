@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Depiforyou</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.svg">
 
 </head>
+
 <body>
     <header>
-     
+
         <div class="caja-logo">
             <img src="img/LOGO COLOR SIN FONDO 2.svg" alt="logo depiforyou" width="200" height="100">
         </div>
-        
+
         <nav class="navegador">
             <a href="#promo-depilacion">
                 <h2 class="roboto-medium navegador">Promos de Depilación Láser</h2>
@@ -26,74 +30,102 @@
                 <h2 class="roboto-medium navegador">Contacto</h2>
             </a>
         </nav>
-        
-        
+
+
     </header>
 
     <main>
         <img src="img/laser-epilation-hair-removal-therapy.jpg" alt="Depilacion" width="100%" height="auto">
-        <p class="roboto-regular parrafo-info">Ofrecemos tratamiento de depilación láser estética con profesionales, calidad y seguridad para resultados y experiencia óptimos en la piel.</p>
-       
-    <div id="promo-depilacion">
-        <h2 class="titulo-promodepilacion roboto-medium">Promos de Depilación Láser</h2>
-    </div>
-        
+        <p class="roboto-regular parrafo-info">Ofrecemos tratamiento de depilación láser estética con profesionales,
+            calidad y seguridad para resultados y experiencia óptimos en la piel.</p>
+
+        <div id="promo-depilacion">
+            <h2 class="titulo-promodepilacion roboto-medium">Promos de Depilación Láser</h2>
+        </div>
+
     </main>
 
 
-        <section class="container-cards">
-            <div class="card roboto-regular">
-                <img src="./img/promo 1.jpg" alt="Promo 1">
-                <h3 class="roboto-medium">PROMO 1</h3>
-                <p>Axilas<br>Brazo Completo<br>Piernas completas<br>Cavado Completo<br>Tira de cola</p>
-                <a href="#contacto" class="button roboto-regular">
-                    Agendar Turno
-                </a>
-            </div>
-            <div class="card roboto-regular">
-                <img src="./img/promo 2.jpg" alt="Promo 2">
-                <h3 class="roboto-medium">PROMO 2</h3>
-                <p>Rostro completo<br>Axilas<br>Piernas completas<br>Cavado Completo</p>
-                <a href="#contacto" class="button roboto-regular">
-                    Agendar Turno
-                </a>
-            </div>
-            <div class="card roboto-regular">
-                <img src="./img/promo 3.jpg" alt="Promo 3">
-                <h3 class="roboto-medium">PROMO 3</h3>
-                <p>Axilas<br>Piernas completas<br>Cavado completo<br>Tira de cola<br>Zona pequeña de regalo</p>
-                <a href="#contacto" class="button roboto-regular">
-                    Agendar Turno
-                </a>
-            </div>
-        </section>
+    <section class="container-cards">
+        <div class="card roboto-regular">
+            <img src="./img/promo 1.jpg" alt="Promo 1">
+            <h3 class="roboto-medium">PROMO 1</h3>
+            <p>Axilas<br>Brazo Completo<br>Piernas completas<br>Cavado Completo<br>Tira de cola</p>
+            <a href="#contacto" class="button roboto-regular">
+                Agendar Turno
+            </a>
+        </div>
+        <div class="card roboto-regular">
+            <img src="./img/promo 2.jpg" alt="Promo 2">
+            <h3 class="roboto-medium">PROMO 2</h3>
+            <p>Rostro completo<br>Axilas<br>Piernas completas<br>Cavado Completo</p>
+            <a href="#contacto" class="button roboto-regular">
+                Agendar Turno
+            </a>
+        </div>
+        <div class="card roboto-regular">
+            <img src="./img/promo 3.jpg" alt="Promo 3">
+            <h3 class="roboto-medium">PROMO 3</h3>
+            <p>Axilas<br>Piernas completas<br>Cavado completo<br>Tira de cola<br>Zona pequeña de regalo</p>
+            <a href="#contacto" class="button roboto-regular">
+                Agendar Turno
+            </a>
+        </div>
+    </section>
+    <h2 class="titulo-promodepilacion roboto-medium">Nuestros Productos</h2>
+    <section id="productos" class="container-cards">
 
-<div class=".icono-texto icono-texto img">
-    <img src="./img/icono contacto azul.svg" width="30px" height="30px">
-    <h2 class="roboto-medium contacto">Contacto</h2>
-</div>
-    
+        <div id="products-container" class="container-cards">
+            <!-- Products will be inserted here dynamically -->
+        </div>
+    </section>
+
+    <!-- Botón flotante del carrito -->
+    <button id="cart-float-button" class="cart-float-button">
+        <span id="cart-counter">0</span>
+    </button>
+
+    <!-- Modal del carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="titulo-promodepilacion roboto-medium">Carrito de Compras</h2>
+            <div id="cart-container">
+                <!-- Cart items will be inserted here dynamically -->
+            </div>
+            <div id="cart-total" class="roboto-medium">
+                Total: $<span id="total-amount">0</span>
+            </div>
+            <button id="pay-button" class="button roboto-regular">Realizar Pedido</button>
+        </div>
+    </div>
+
+    <div class=".icono-texto icono-texto img">
+        <img src="./img/icono contacto azul.svg" width="30px" height="30px">
+        <h2 class="roboto-medium contacto">Contacto</h2>
+    </div>
+
     <form action="https://formspree.io/f/xpwzqreq" class="form" method="POST" id="contacto">
 
         <label for="name" class="label roboto-regular">Nombre y Apellido: (*)</label>
         <input type="text" id="name" name="name" class="input roboto-regular" required>
-    
+
         <label for="email" class="label roboto-regular">Correo Electrónico: (*)</label>
         <input type="email" id="email" name="_replyto" class="input roboto-regular" required>
-    
+
         <label for="phone" class="label roboto-regular">Teléfono: (*)</label>
         <input type="tel" id="phone" name="phone" class="input roboto-regular" required>
-    
+
         <label for="message" class="label roboto-regular">Mensaje:</label>
         <textarea id="message" name="message" class="textarea roboto-regular" required></textarea>
-    
+
         <button type="submit" class="button roboto-regular">Enviar</button>
-    </form>    
-    
-    <footer >
+    </form>
+
+    <footer>
         <div class="icono-footer">
             <img src="./img/icono whatsapp.svg" width="30px" height="30px">
-            <p class="roboto-medium-blanco" >Puedes chatear con Nosotros</p>
+            <p class="roboto-medium-blanco">Puedes chatear con Nosotros</p>
             <p class="roboto-regular-blanco">Whatsapp: +54 9 11 7123 7087</p>
         </div>
 
@@ -101,7 +133,7 @@
             <img src="./img/mail icono.svg" width="30px" height="30px">
             <p class="roboto-medium-blanco">Email</p>
             <p class="roboto-regular-blanco">Para consultas también: depiforyou@gmail.com</p>
-            
+
         </div>
 
         <div class="icono-footer">
@@ -115,11 +147,12 @@
                 <img src="./img/instagram icono.svg" width="30px" height="30px">
                 <img src="./img/boton facebook.svg" width="30px" height="30px">
             </div>
-            <p class="roboto-medium-blanco" >Síguenos en nuestras redes sociales</p>
+            <p class="roboto-medium-blanco">Síguenos en nuestras redes sociales</p>
         </div>
 
     </footer>
 
+    <script src="scripts.js"></script>
 </body>
 
 </html>
